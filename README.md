@@ -17,15 +17,554 @@ install.packages("pacman")
 
 ## Que hacer con este repositorio
 
-En este repositorio, lo único que necesitas hacer es en la linea 42 de
+En este repositorio, lo único que necesitas hacer es en la linea 36 de
 codigo, cambiar las comunas que aparecen como ejemplo por las que
 quieras visualizar, y esto generará un *GIF* con la evolución de la
 prevalencia de casos activos para las comunas seleccionadas y un informe
 en PDF con las tendencias de la últimas dos semanas. Debes escribir los
-nombres de las comunas tal y como aparecen en la tabla que aparece a
-continuación:
+nombres de las comunas tal y como aparecen en la tabla que aparece al
+final de este
+documento:
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; overflow-x: scroll; width:100%; ">
+### Comunas a revisar:
+
+``` r
+Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes")
+```
+
+Una vez que hayas cambiado las comunas de la linea 42, y apretes Knit,
+aparecera un HTML con el gif de las comunas que seleccionaste:
+
+![](README_files/figure-gfm/GIF-1.gif)<!-- -->
+
+Este está actualizado en el último informe epidemiológico, la última
+fecha includia fué 2020-10-02, a continuación vemos una tabla con las 5
+comunas con mas casos en la útlitma fecha
+disponible:
+
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Region
+
+</th>
+
+<th style="text-align:left;">
+
+Codigo region
+
+</th>
+
+<th style="text-align:left;">
+
+Comuna
+
+</th>
+
+<th style="text-align:left;">
+
+Codigo comuna
+
+</th>
+
+<th style="text-align:right;">
+
+Poblacion
+
+</th>
+
+<th style="text-align:left;">
+
+Fecha
+
+</th>
+
+<th style="text-align:right;">
+
+Activos
+
+</th>
+
+<th style="text-align:right;">
+
+Activos\_por\_100.000
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Magallanes y la Antartica
+
+</td>
+
+<td style="text-align:left;">
+
+12
+
+</td>
+
+<td style="text-align:left;">
+
+Punta Arenas
+
+</td>
+
+<td style="text-align:left;">
+
+12101
+
+</td>
+
+<td style="text-align:right;">
+
+141984
+
+</td>
+
+<td style="text-align:left;">
+
+2020-10-02
+
+</td>
+
+<td style="text-align:right;">
+
+1308
+
+</td>
+
+<td style="text-align:right;">
+
+921.23056
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05
+
+</td>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05101
+
+</td>
+
+<td style="text-align:right;">
+
+315732
+
+</td>
+
+<td style="text-align:left;">
+
+2020-10-02
+
+</td>
+
+<td style="text-align:right;">
+
+299
+
+</td>
+
+<td style="text-align:right;">
+
+94.70057
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+<td style="text-align:left;">
+
+05109
+
+</td>
+
+<td style="text-align:right;">
+
+361371
+
+</td>
+
+<td style="text-align:left;">
+
+2020-10-02
+
+</td>
+
+<td style="text-align:right;">
+
+304
+
+</td>
+
+<td style="text-align:right;">
+
+84.12407
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Metropolitana
+
+</td>
+
+<td style="text-align:left;">
+
+13
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+<td style="text-align:left;">
+
+13118
+
+</td>
+
+<td style="text-align:right;">
+
+134635
+
+</td>
+
+<td style="text-align:left;">
+
+2020-10-02
+
+</td>
+
+<td style="text-align:right;">
+
+80
+
+</td>
+
+<td style="text-align:right;">
+
+59.41991
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05
+
+</td>
+
+<td style="text-align:left;">
+
+Concon
+
+</td>
+
+<td style="text-align:left;">
+
+05103
+
+</td>
+
+<td style="text-align:right;">
+
+45889
+
+</td>
+
+<td style="text-align:left;">
+
+2020-10-02
+
+</td>
+
+<td style="text-align:right;">
+
+24
+
+</td>
+
+<td style="text-align:right;">
+
+52.30012
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## Tendencia a disminución/aumento en las últimas 2 semanas
+
+En la siguiente tabla se ordenen las comunas en orden acendente según la
+tendencia de aumento de casos activos por cada 100.000 habitantes en las
+últimas dos semanas, si los valores son negativos, esto implica una
+disminución y si son positivos un aumento de casos.
+
+<table>
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;">
+
+Aumento por día
+
+</th>
+
+<th style="text-align:left;">
+
+Comuna
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-2.4702009
+
+</td>
+
+<td style="text-align:left;">
+
+Concon
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-2.3212694
+
+</td>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-1.3254073
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-1.0532635
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.7648849
+
+</td>
+
+<td style="text-align:left;">
+
+Nunoa
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.1789976
+
+</td>
+
+<td style="text-align:left;">
+
+San Bernardo
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.0019696
+
+</td>
+
+<td style="text-align:left;">
+
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.1500014
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.1124703
+
+</td>
+
+<td style="text-align:left;">
+
+Talagante
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+8.8519861
+
+</td>
+
+<td style="text-align:left;">
+
+Punta
+Arenas
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## Lista de comunas
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;" class="table table-striped table-hover">
 
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 
@@ -5837,8 +6376,7 @@ Magallanes y la Antartica
 
 <td style="text-align:left;">
 
-Desconocido
-Magallanes
+Desconocido Magallanes
 
 </td>
 
@@ -5849,343 +6387,3 @@ Magallanes
 </table>
 
 </div>
-
-### Comunas a revisar:
-
-``` r
-Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes")
-```
-
-Una vez que hayas cambiado las comunas de la linea 42, y apretes Knit,
-aparecera un HTML con el gif de las comunas que seleccionaste:
-
-![](README_files/figure-gfm/GIF-1.gif)<!-- -->
-
-Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué `max(CasosActivos$Fecha)`, a continuación vemos una
-tabla con las 5 comunas con mas casos en la útlitma fecha
-disponible:
-
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-
-<thead>
-
-<tr>
-
-<th style="text-align:left;">
-
-Region
-
-</th>
-
-<th style="text-align:left;">
-
-Codigo region
-
-</th>
-
-<th style="text-align:left;">
-
-Comuna
-
-</th>
-
-<th style="text-align:left;">
-
-Codigo comuna
-
-</th>
-
-<th style="text-align:right;">
-
-Poblacion
-
-</th>
-
-<th style="text-align:left;">
-
-Fecha
-
-</th>
-
-<th style="text-align:right;">
-
-Activos
-
-</th>
-
-<th style="text-align:right;">
-
-Activos\_por\_100.000
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td style="text-align:left;">
-
-Magallanes y la Antartica
-
-</td>
-
-<td style="text-align:left;">
-
-12
-
-</td>
-
-<td style="text-align:left;">
-
-Punta Arenas
-
-</td>
-
-<td style="text-align:left;">
-
-12101
-
-</td>
-
-<td style="text-align:right;">
-
-141984
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-1308
-
-</td>
-
-<td style="text-align:right;">
-
-921.23056
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05101
-
-</td>
-
-<td style="text-align:right;">
-
-315732
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-299
-
-</td>
-
-<td style="text-align:right;">
-
-94.70057
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Vina del Mar
-
-</td>
-
-<td style="text-align:left;">
-
-05109
-
-</td>
-
-<td style="text-align:right;">
-
-361371
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-304
-
-</td>
-
-<td style="text-align:right;">
-
-84.12407
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Metropolitana
-
-</td>
-
-<td style="text-align:left;">
-
-13
-
-</td>
-
-<td style="text-align:left;">
-
-Macul
-
-</td>
-
-<td style="text-align:left;">
-
-13118
-
-</td>
-
-<td style="text-align:right;">
-
-134635
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-80
-
-</td>
-
-<td style="text-align:right;">
-
-59.41991
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Concon
-
-</td>
-
-<td style="text-align:left;">
-
-05103
-
-</td>
-
-<td style="text-align:right;">
-
-45889
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-24
-
-</td>
-
-<td style="text-align:right;">
-
-52.30012
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
