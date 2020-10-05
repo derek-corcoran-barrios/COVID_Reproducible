@@ -1,0 +1,71 @@
+---
+title: "Historial de COVID en la comuna a elección"
+output: github_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, gganimate, rmarkdown, lubridate, gifski, ggrepel, kableExtra)
+```
+
+## Paquetes necesarios
+
+Para generar los informes reproducibles creados por este repositorio, necesitamos instalar los paquetes *tidyverse*, *gganimate*, *ggrepel*. *rmarkdown*, *gifski* y *lubridate*. Sin embargo si instalas los paquetes *pacman* y *rmarkdown*, abres el documento `README.Rmd` y apretas el botton **Knit**, el script se ocupará de instalar los paquetes necesarios, para eso solo tienes que correr esto en tu consola:
+
+```{r, echo = TRUE, eval = FALSE}
+install.packages("rmarkdown")
+install.packages("pacman")
+```
+
+## Que hacer con este repositorio
+
+En este repositorio, lo único que necesitas hacer es en la linea 42 de codigo, cambiar las comunas que aparecen como ejemplo por las que quieras visualizar, y esto generará un *GIF* con la evolución de la prevalencia de casos activos para las comunas seleccionadas y un informe en PDF con las tendencias de la últimas dos semanas. Debes escribir los nombres de las comunas tal y como aparecen en la tabla que aparece a continuación:
+
+```{r}
+CasosActivosPorComuna <- read_csv("https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto19/CasosActivosPorComuna.csv") %>% 
+  pivot_longer(cols = starts_with("2020"), names_to = "Fecha", values_to = "Activos") %>%
+  mutate(Activos_por_100.000 = (Activos/Poblacion)*100000, Fecha = lubridate::ymd(Fecha)) %>% 
+  dplyr::filter(Comuna != "Total")
+
+Tabla <- CasosActivosPorComuna %>% dplyr::select(Region, Comuna) %>% 
+  distinct()
+kable(Tabla) %>%
+  kable_styling(c("striped", "hover")) %>%
+  scroll_box(width = "100%", height = "200px")
+```
+
+### Comunas a revisar:
+
+```{r, echo = TRUE}
+Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes")
+```
+
+Una vez que hayas cambiado las comunas de la linea 42, y apretes Knit, aparecera un HTML con el gif de las comunas que seleccionaste:
+
+```{r GIF}
+CasosActivos <- CasosActivosPorComuna %>% dplyr::filter(Comuna %in% Comunas)
+
+Animation <- ggplot(CasosActivos, aes(x = Fecha, y = Activos_por_100.000, group =Comuna))  + geom_linerange(aes(color = Comuna, xmax = max(Fecha), xmin = Fecha), lty = 2) + geom_text_repel(direction = "y", seed = 2020, aes(x = max(Fecha), label = Comuna, color = Comuna), force = 0.5) + geom_point(aes(color = Comuna)) + geom_path(aes(color = Comuna)) + transition_reveal(along = CasosActivos$Fecha)   + geom_hline(yintercept = 40, lty = 2) + theme_bw() + facet_wrap(~Region, ncol = 1, scales = "free_y") + theme(legend.position = "none")  + ylab("Casos activos por 100.000 habitantes") + 
+    labs(title = "Prevalencia por Región y Comuna", 
+         subtitle = paste("Actualizado", max(CasosActivos$Fecha)), 
+        caption = "Datos: https://github.com/MinCiencia/Datos-COVID19")
+        
+        
+library(gifski)
+        
+animate(Animation, width = 1100, height = 1100, nframes = 150, renderer = gifski_renderer(loop = F), end_pause = 30, res = 150, fps = 8)
+anim_save("Animacion.gif")
+```
+
+Este está actualizado en el último informe epidemiológico, la última fecha includia fué `max(CasosActivos$Fecha)`, a continuación vemos una tabla con las 5 comunas con mas casos en la útlitma fecha disponible:
+
+```{r TABLA5mas}
+Top5 <- CasosActivos %>% dplyr::filter(Fecha == max(Fecha)) %>% slice_max(n = 5, order_by = Activos_por_100.000) %>% 
+  arrange(desc(Activos_por_100.000))
+
+kable(Top5) %>%
+  kable_styling(c("striped", "hover")) 
+```
+
