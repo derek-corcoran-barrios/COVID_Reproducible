@@ -33,7 +33,7 @@ CasosActivosPorComuna <- read_csv("https://raw.githubusercontent.com/MinCiencia/
 ### Comunas a revisar:
 
 ```{r, echo = TRUE}
-Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes")
+Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes", "Valdivia")
 ```
 
 Una vez que hayas cambiado las comunas de la linea 42, y apretes Knit, aparecera un HTML con el gif de las comunas que seleccionaste:

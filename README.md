@@ -1,7 +1,7 @@
 Historial de COVID en la comuna a elección
 ================
 
-## Paquetes necesarios
+## 0.1 Paquetes necesarios
 
 Para generar los informes reproducibles creados por este repositorio,
 necesitamos instalar los paquetes *tidyverse*, *gganimate*, *ggrepel*.
@@ -15,7 +15,7 @@ install.packages("rmarkdown")
 install.packages("pacman")
 ```
 
-## Que hacer con este repositorio
+## 0.2 Que hacer con este repositorio
 
 En este repositorio, lo único que necesitas hacer es en la linea 36 de
 codigo, cambiar las comunas que aparecen como ejemplo por las que
@@ -26,10 +26,10 @@ nombres de las comunas tal y como aparecen en la tabla que aparece al
 final de este
 documento:
 
-### Comunas a revisar:
+### 0.2.1 Comunas a revisar:
 
 ``` r
-Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes")
+Comunas <- c("Punta Arenas", "La Florida", "Vina del Mar", "Nunoa", "Valparaiso", "Concon", "Talagante", "San Bernardo", "Macul", "Las Condes", "Valdivia")
 ```
 
 Una vez que hayas cambiado las comunas de la linea 42, y apretes Knit,
@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-10-02, a continuación vemos una tabla con las 5
+fecha includia fué 2020-11-16, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,71 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-10-02
+2020-11-16
 
 </td>
 
 <td style="text-align:right;">
 
-1308
+320
 
 </td>
 
 <td style="text-align:right;">
 
-921.23056
+225.37751
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Los Rios
+
+</td>
+
+<td style="text-align:left;">
+
+14
+
+</td>
+
+<td style="text-align:left;">
+
+Valdivia
+
+</td>
+
+<td style="text-align:left;">
+
+14101
+
+</td>
+
+<td style="text-align:right;">
+
+176774
+
+</td>
+
+<td style="text-align:left;">
+
+2020-11-16
+
+</td>
+
+<td style="text-align:right;">
+
+327
+
+</td>
+
+<td style="text-align:right;">
+
+184.98195
 
 </td>
 
@@ -188,19 +240,19 @@ Valparaiso
 
 <td style="text-align:left;">
 
-2020-10-02
+2020-11-16
 
 </td>
 
 <td style="text-align:right;">
 
-299
+125
 
 </td>
 
 <td style="text-align:right;">
 
-94.70057
+39.59054
 
 </td>
 
@@ -240,71 +292,19 @@ Vina del Mar
 
 <td style="text-align:left;">
 
-2020-10-02
+2020-11-16
 
 </td>
 
 <td style="text-align:right;">
 
-304
+107
 
 </td>
 
 <td style="text-align:right;">
 
-84.12407
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Metropolitana
-
-</td>
-
-<td style="text-align:left;">
-
-13
-
-</td>
-
-<td style="text-align:left;">
-
-Macul
-
-</td>
-
-<td style="text-align:left;">
-
-13118
-
-</td>
-
-<td style="text-align:right;">
-
-134635
-
-</td>
-
-<td style="text-align:left;">
-
-2020-10-02
-
-</td>
-
-<td style="text-align:right;">
-
-80
-
-</td>
-
-<td style="text-align:right;">
-
-59.41991
+29.60946
 
 </td>
 
@@ -344,19 +344,19 @@ Concon
 
 <td style="text-align:left;">
 
-2020-10-02
+2020-11-16
 
 </td>
 
 <td style="text-align:right;">
 
-24
+13
 
 </td>
 
 <td style="text-align:right;">
 
-52.30012
+28.32923
 
 </td>
 
@@ -366,7 +366,7 @@ Concon
 
 </table>
 
-## Tendencia a disminución/aumento en las últimas 2 semanas
+## 0.3 Tendencia a disminución/aumento en las últimas 2 semanas
 
 En la siguiente tabla se ordenen las comunas en orden acendente según la
 tendencia de aumento de casos activos por cada 100.000 habitantes en las
@@ -401,7 +401,23 @@ Comuna
 
 <td style="text-align:right;">
 
-\-2.4702009
+\-2.3205349
+
+</td>
+
+<td style="text-align:left;">
+
+Punta Arenas
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-1.4161065
 
 </td>
 
@@ -417,71 +433,7 @@ Concon
 
 <td style="text-align:right;">
 
-\-2.3212694
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-1.3254073
-
-</td>
-
-<td style="text-align:left;">
-
-La Florida
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-1.0532635
-
-</td>
-
-<td style="text-align:left;">
-
-Vina del Mar
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.7648849
-
-</td>
-
-<td style="text-align:left;">
-
-Nunoa
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.1789976
+\-1.1756448
 
 </td>
 
@@ -497,23 +449,7 @@ San Bernardo
 
 <td style="text-align:right;">
 
-\-0.0019696
-
-</td>
-
-<td style="text-align:left;">
-
-Las Condes
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.1500014
+\-0.9532348
 
 </td>
 
@@ -529,7 +465,7 @@ Macul
 
 <td style="text-align:right;">
 
-1.1124703
+\-0.7104685
 
 </td>
 
@@ -545,14 +481,94 @@ Talagante
 
 <td style="text-align:right;">
 
-8.8519861
+\-0.4525176
 
 </td>
 
 <td style="text-align:left;">
 
-Punta
-Arenas
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.2970531
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.2786134
+
+</td>
+
+<td style="text-align:left;">
+
+Nunoa
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.1851857
+
+</td>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.1748679
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del
+Mar
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+2.3143704
+
+</td>
+
+<td style="text-align:left;">
+
+Valdivia
 
 </td>
 
@@ -562,7 +578,7 @@ Arenas
 
 </table>
 
-## Lista de comunas
+## 0.4 Lista de comunas
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;" class="table table-striped table-hover">
 
