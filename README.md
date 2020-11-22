@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-11-16, a continuación vemos una tabla con las 5
+fecha includia fué 2020-11-20, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,19 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-11-16
+2020-11-20
 
 </td>
 
 <td style="text-align:right;">
 
-320
+374
 
 </td>
 
 <td style="text-align:right;">
 
-225.37751
+263.40996
 
 </td>
 
@@ -188,19 +188,19 @@ Valdivia
 
 <td style="text-align:left;">
 
-2020-11-16
+2020-11-20
 
 </td>
 
 <td style="text-align:right;">
 
-327
+366
 
 </td>
 
 <td style="text-align:right;">
 
-184.98195
+207.04402
 
 </td>
 
@@ -240,71 +240,19 @@ Valparaiso
 
 <td style="text-align:left;">
 
-2020-11-16
+2020-11-20
 
 </td>
 
 <td style="text-align:right;">
 
-125
+157
 
 </td>
 
 <td style="text-align:right;">
 
-39.59054
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Vina del Mar
-
-</td>
-
-<td style="text-align:left;">
-
-05109
-
-</td>
-
-<td style="text-align:right;">
-
-361371
-
-</td>
-
-<td style="text-align:left;">
-
-2020-11-16
-
-</td>
-
-<td style="text-align:right;">
-
-107
-
-</td>
-
-<td style="text-align:right;">
-
-29.60946
+49.72572
 
 </td>
 
@@ -344,19 +292,71 @@ Concon
 
 <td style="text-align:left;">
 
-2020-11-16
+2020-11-20
 
 </td>
 
 <td style="text-align:right;">
+
+22
+
+</td>
+
+<td style="text-align:right;">
+
+47.94177
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Metropolitana
+
+</td>
+
+<td style="text-align:left;">
 
 13
 
 </td>
 
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+<td style="text-align:left;">
+
+13118
+
+</td>
+
 <td style="text-align:right;">
 
-28.32923
+134635
+
+</td>
+
+<td style="text-align:left;">
+
+2020-11-20
+
+</td>
+
+<td style="text-align:right;">
+
+51
+
+</td>
+
+<td style="text-align:right;">
+
+37.88019
 
 </td>
 
@@ -401,23 +401,7 @@ Comuna
 
 <td style="text-align:right;">
 
-\-2.3205349
-
-</td>
-
-<td style="text-align:left;">
-
-Punta Arenas
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-1.4161065
+\-1.5403264
 
 </td>
 
@@ -433,13 +417,13 @@ Concon
 
 <td style="text-align:right;">
 
-\-1.1756448
+\-0.7650997
 
 </td>
 
 <td style="text-align:left;">
 
-San Bernardo
+Punta Arenas
 
 </td>
 
@@ -449,71 +433,7 @@ San Bernardo
 
 <td style="text-align:right;">
 
-\-0.9532348
-
-</td>
-
-<td style="text-align:left;">
-
-Macul
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.7104685
-
-</td>
-
-<td style="text-align:left;">
-
-Talagante
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.4525176
-
-</td>
-
-<td style="text-align:left;">
-
-Las Condes
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.2970531
-
-</td>
-
-<td style="text-align:left;">
-
-La Florida
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.2786134
+\-0.5839164
 
 </td>
 
@@ -529,7 +449,71 @@ Nunoa
 
 <td style="text-align:right;">
 
-\-0.1851857
+\-0.3825965
+
+</td>
+
+<td style="text-align:left;">
+
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.2427932
+
+</td>
+
+<td style="text-align:left;">
+
+Talagante
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.0489692
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+\-0.0423174
+
+</td>
+
+<td style="text-align:left;">
+
+San Bernardo
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.0675747
 
 </td>
 
@@ -545,7 +529,23 @@ Valparaiso
 
 <td style="text-align:right;">
 
-0.1748679
+0.1306464
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.4723236
 
 </td>
 
@@ -562,7 +562,7 @@ Mar
 
 <td style="text-align:right;">
 
-2.3143704
+2.2848880
 
 </td>
 
