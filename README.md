@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-11-20, a continuación vemos una tabla con las 5
+fecha includia fué 2020-11-23, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,19 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-11-20
+2020-11-23
 
 </td>
 
 <td style="text-align:right;">
 
-374
+371
 
 </td>
 
 <td style="text-align:right;">
 
-263.40996
+261.29705
 
 </td>
 
@@ -188,71 +188,19 @@ Valdivia
 
 <td style="text-align:left;">
 
-2020-11-20
+2020-11-23
 
 </td>
 
 <td style="text-align:right;">
 
-366
+339
 
 </td>
 
 <td style="text-align:right;">
 
-207.04402
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05101
-
-</td>
-
-<td style="text-align:right;">
-
-315732
-
-</td>
-
-<td style="text-align:left;">
-
-2020-11-20
-
-</td>
-
-<td style="text-align:right;">
-
-157
-
-</td>
-
-<td style="text-align:right;">
-
-49.72572
+191.77028
 
 </td>
 
@@ -292,19 +240,19 @@ Concon
 
 <td style="text-align:left;">
 
-2020-11-20
+2020-11-23
 
 </td>
 
 <td style="text-align:right;">
 
-22
+28
 
 </td>
 
 <td style="text-align:right;">
 
-47.94177
+61.01680
 
 </td>
 
@@ -314,49 +262,101 @@ Concon
 
 <td style="text-align:left;">
 
-Metropolitana
+Valparaiso
 
 </td>
 
 <td style="text-align:left;">
 
-13
+05
 
 </td>
 
 <td style="text-align:left;">
 
-Macul
+Valparaiso
 
 </td>
 
 <td style="text-align:left;">
 
-13118
+05101
 
 </td>
 
 <td style="text-align:right;">
 
-134635
+315732
 
 </td>
 
 <td style="text-align:left;">
 
-2020-11-20
+2020-11-23
 
 </td>
 
 <td style="text-align:right;">
 
-51
+159
 
 </td>
 
 <td style="text-align:right;">
 
-37.88019
+50.35917
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+<td style="text-align:left;">
+
+05109
+
+</td>
+
+<td style="text-align:right;">
+
+361371
+
+</td>
+
+<td style="text-align:left;">
+
+2020-11-23
+
+</td>
+
+<td style="text-align:right;">
+
+165
+
+</td>
+
+<td style="text-align:right;">
+
+45.65945
 
 </td>
 
@@ -401,23 +401,7 @@ Comuna
 
 <td style="text-align:right;">
 
-\-1.5403264
-
-</td>
-
-<td style="text-align:left;">
-
-Concon
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.7650997
+\-1.4086094
 
 </td>
 
@@ -433,13 +417,13 @@ Punta Arenas
 
 <td style="text-align:right;">
 
-\-0.5839164
+\-0.7559667
 
 </td>
 
 <td style="text-align:left;">
 
-Nunoa
+Concon
 
 </td>
 
@@ -449,23 +433,7 @@ Nunoa
 
 <td style="text-align:right;">
 
-\-0.3825965
-
-</td>
-
-<td style="text-align:left;">
-
-Las Condes
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.2427932
+\-0.6487752
 
 </td>
 
@@ -481,13 +449,13 @@ Talagante
 
 <td style="text-align:right;">
 
-\-0.0489692
+\-0.4732522
 
 </td>
 
 <td style="text-align:left;">
 
-La Florida
+Nunoa
 
 </td>
 
@@ -497,23 +465,7 @@ La Florida
 
 <td style="text-align:right;">
 
-\-0.0423174
-
-</td>
-
-<td style="text-align:left;">
-
-San Bernardo
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.0675747
+\-0.4147335
 
 </td>
 
@@ -529,7 +481,71 @@ Valparaiso
 
 <td style="text-align:right;">
 
-0.1306464
+\-0.2821464
+
+</td>
+
+<td style="text-align:left;">
+
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.0294824
+
+</td>
+
+<td style="text-align:left;">
+
+Valdivia
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.2124699
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.2636324
+
+</td>
+
+<td style="text-align:left;">
+
+San Bernardo
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.3568582
 
 </td>
 
@@ -545,7 +561,7 @@ Macul
 
 <td style="text-align:right;">
 
-0.4723236
+0.6332200
 
 </td>
 
@@ -553,22 +569,6 @@ Macul
 
 Vina del
 Mar
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-2.2848880
-
-</td>
-
-<td style="text-align:left;">
-
-Valdivia
 
 </td>
 
