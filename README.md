@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-11-23, a continuación vemos una tabla con las 5
+fecha includia fué 2020-11-30, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,19 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-11-23
+2020-11-30
 
 </td>
 
 <td style="text-align:right;">
 
-371
+456
 
 </td>
 
 <td style="text-align:right;">
 
-261.29705
+321.16295
 
 </td>
 
@@ -188,71 +188,19 @@ Valdivia
 
 <td style="text-align:left;">
 
-2020-11-23
+2020-11-30
 
 </td>
 
 <td style="text-align:right;">
 
-339
+323
 
 </td>
 
 <td style="text-align:right;">
 
-191.77028
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Concon
-
-</td>
-
-<td style="text-align:left;">
-
-05103
-
-</td>
-
-<td style="text-align:right;">
-
-45889
-
-</td>
-
-<td style="text-align:left;">
-
-2020-11-23
-
-</td>
-
-<td style="text-align:right;">
-
-28
-
-</td>
-
-<td style="text-align:right;">
-
-61.01680
+182.71918
 
 </td>
 
@@ -292,19 +240,19 @@ Valparaiso
 
 <td style="text-align:left;">
 
-2020-11-23
+2020-11-30
 
 </td>
 
 <td style="text-align:right;">
 
-159
+212
 
 </td>
 
 <td style="text-align:right;">
 
-50.35917
+67.14555
 
 </td>
 
@@ -326,37 +274,89 @@ Valparaiso
 
 <td style="text-align:left;">
 
-Vina del Mar
+Concon
 
 </td>
 
 <td style="text-align:left;">
 
-05109
+05103
 
 </td>
 
 <td style="text-align:right;">
 
-361371
+45889
 
 </td>
 
 <td style="text-align:left;">
 
-2020-11-23
+2020-11-30
 
 </td>
 
 <td style="text-align:right;">
 
-165
+22
 
 </td>
 
 <td style="text-align:right;">
 
-45.65945
+47.94177
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Metropolitana
+
+</td>
+
+<td style="text-align:left;">
+
+13
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+<td style="text-align:left;">
+
+13110
+
+</td>
+
+<td style="text-align:right;">
+
+402433
+
+</td>
+
+<td style="text-align:left;">
+
+2020-11-30
+
+</td>
+
+<td style="text-align:right;">
+
+163
+
+</td>
+
+<td style="text-align:right;">
+
+40.50364
 
 </td>
 
@@ -401,103 +401,7 @@ Comuna
 
 <td style="text-align:right;">
 
-\-1.4086094
-
-</td>
-
-<td style="text-align:left;">
-
-Punta Arenas
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.7559667
-
-</td>
-
-<td style="text-align:left;">
-
-Concon
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.6487752
-
-</td>
-
-<td style="text-align:left;">
-
-Talagante
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.4732522
-
-</td>
-
-<td style="text-align:left;">
-
-Nunoa
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.4147335
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.2821464
-
-</td>
-
-<td style="text-align:left;">
-
-Las Condes
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.0294824
+\-2.0186249
 
 </td>
 
@@ -513,13 +417,13 @@ Valdivia
 
 <td style="text-align:right;">
 
-0.2124699
+\-0.4398138
 
 </td>
 
 <td style="text-align:left;">
 
-La Florida
+Talagante
 
 </td>
 
@@ -529,7 +433,23 @@ La Florida
 
 <td style="text-align:right;">
 
-0.2636324
+0.4655632
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.5564492
 
 </td>
 
@@ -545,7 +465,7 @@ San Bernardo
 
 <td style="text-align:right;">
 
-0.3568582
+0.5637150
 
 </td>
 
@@ -561,14 +481,94 @@ Macul
 
 <td style="text-align:right;">
 
-0.6332200
+0.9882884
 
 </td>
 
 <td style="text-align:left;">
 
-Vina del
-Mar
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.0138561
+
+</td>
+
+<td style="text-align:left;">
+
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.1717385
+
+</td>
+
+<td style="text-align:left;">
+
+Nunoa
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.3416937
+
+</td>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.4125574
+
+</td>
+
+<td style="text-align:left;">
+
+Concon
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+4.6789233
+
+</td>
+
+<td style="text-align:left;">
+
+Punta
+Arenas
 
 </td>
 
