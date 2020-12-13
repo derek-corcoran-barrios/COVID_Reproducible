@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-12-07, a continuación vemos una tabla con las 5
+fecha includia fué 2020-12-11, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,19 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-12-07
+2020-12-11
 
 </td>
 
 <td style="text-align:right;">
 
-378
+374
 
 </td>
 
 <td style="text-align:right;">
 
-266.22718
+263.40996
 
 </td>
 
@@ -188,71 +188,19 @@ Valdivia
 
 <td style="text-align:left;">
 
-2020-12-07
+2020-12-11
 
 </td>
 
 <td style="text-align:right;">
 
-375
+352
 
 </td>
 
 <td style="text-align:right;">
 
-212.13527
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Vina del Mar
-
-</td>
-
-<td style="text-align:left;">
-
-05109
-
-</td>
-
-<td style="text-align:right;">
-
-361371
-
-</td>
-
-<td style="text-align:left;">
-
-2020-12-07
-
-</td>
-
-<td style="text-align:right;">
-
-219
-
-</td>
-
-<td style="text-align:right;">
-
-60.60254
+199.12431
 
 </td>
 
@@ -292,19 +240,19 @@ Concon
 
 <td style="text-align:left;">
 
-2020-12-07
+2020-12-11
 
 </td>
 
 <td style="text-align:right;">
 
-26
+34
 
 </td>
 
 <td style="text-align:right;">
 
-56.65846
+74.09183
 
 </td>
 
@@ -344,19 +292,71 @@ Valparaiso
 
 <td style="text-align:left;">
 
-2020-12-07
+2020-12-11
 
 </td>
 
 <td style="text-align:right;">
 
-167
+208
 
 </td>
 
 <td style="text-align:right;">
 
-52.89296
+65.87866
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Valparaiso
+
+</td>
+
+<td style="text-align:left;">
+
+05
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+<td style="text-align:left;">
+
+05109
+
+</td>
+
+<td style="text-align:right;">
+
+361371
+
+</td>
+
+<td style="text-align:left;">
+
+2020-12-11
+
+</td>
+
+<td style="text-align:right;">
+
+205
+
+</td>
+
+<td style="text-align:right;">
+
+56.72840
 
 </td>
 
@@ -401,23 +401,7 @@ Comuna
 
 <td style="text-align:right;">
 
-\-0.7382210
-
-</td>
-
-<td style="text-align:left;">
-
-Concon
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.4657129
+\-4.1822394
 
 </td>
 
@@ -433,39 +417,7 @@ Punta Arenas
 
 <td style="text-align:right;">
 
-0.1452779
-
-</td>
-
-<td style="text-align:left;">
-
-Talagante
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.2852582
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.3220012
+\-0.1332754
 
 </td>
 
@@ -481,13 +433,13 @@ San Bernardo
 
 <td style="text-align:right;">
 
-0.3387129
+\-0.0304344
 
 </td>
 
 <td style="text-align:left;">
 
-Macul
+Valparaiso
 
 </td>
 
@@ -497,7 +449,7 @@ Macul
 
 <td style="text-align:right;">
 
-0.4002528
+\-0.0076894
 
 </td>
 
@@ -513,7 +465,7 @@ La Florida
 
 <td style="text-align:right;">
 
-0.6489861
+0.4008154
 
 </td>
 
@@ -529,7 +481,71 @@ Las Condes
 
 <td style="text-align:right;">
 
-1.1325850
+0.4318534
+
+</td>
+
+<td style="text-align:left;">
+
+Talagante
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.7950072
+
+</td>
+
+<td style="text-align:left;">
+
+Concon
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.9701704
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.9836094
+
+</td>
+
+<td style="text-align:left;">
+
+Nunoa
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+1.3597330
 
 </td>
 
@@ -546,23 +562,7 @@ Mar
 
 <td style="text-align:right;">
 
-1.2296745
-
-</td>
-
-<td style="text-align:left;">
-
-Nunoa
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-1.9578174
+1.5598046
 
 </td>
 
