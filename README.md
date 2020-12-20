@@ -38,7 +38,7 @@ aparecera un HTML con el gif de las comunas que seleccionaste:
 ![](README_files/figure-gfm/GIF-1.gif)<!-- -->
 
 Este está actualizado en el último informe epidemiológico, la última
-fecha includia fué 2020-12-11, a continuación vemos una tabla con las 5
+fecha includia fué 2020-12-18, a continuación vemos una tabla con las 5
 comunas con mas casos en la útlitma fecha
 disponible:
 
@@ -136,19 +136,19 @@ Punta Arenas
 
 <td style="text-align:left;">
 
-2020-12-11
+2020-12-18
 
 </td>
 
 <td style="text-align:right;">
 
-374
+420
 
 </td>
 
 <td style="text-align:right;">
 
-263.40996
+295.80798
 
 </td>
 
@@ -188,19 +188,19 @@ Valdivia
 
 <td style="text-align:left;">
 
-2020-12-11
+2020-12-18
 
 </td>
 
 <td style="text-align:right;">
 
-352
+416
 
 </td>
 
 <td style="text-align:right;">
 
-199.12431
+235.32872
 
 </td>
 
@@ -240,19 +240,71 @@ Concon
 
 <td style="text-align:left;">
 
-2020-12-11
+2020-12-18
 
 </td>
 
 <td style="text-align:right;">
 
-34
+36
 
 </td>
 
 <td style="text-align:right;">
 
-74.09183
+78.45017
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Metropolitana
+
+</td>
+
+<td style="text-align:left;">
+
+13
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
+
+</td>
+
+<td style="text-align:left;">
+
+13118
+
+</td>
+
+<td style="text-align:right;">
+
+134635
+
+</td>
+
+<td style="text-align:left;">
+
+2020-12-18
+
+</td>
+
+<td style="text-align:right;">
+
+99
+
+</td>
+
+<td style="text-align:right;">
+
+73.53214
 
 </td>
 
@@ -292,71 +344,19 @@ Valparaiso
 
 <td style="text-align:left;">
 
-2020-12-11
+2020-12-18
 
 </td>
 
 <td style="text-align:right;">
 
-208
+220
 
 </td>
 
 <td style="text-align:right;">
 
-65.87866
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-<td style="text-align:left;">
-
-05
-
-</td>
-
-<td style="text-align:left;">
-
-Vina del Mar
-
-</td>
-
-<td style="text-align:left;">
-
-05109
-
-</td>
-
-<td style="text-align:right;">
-
-361371
-
-</td>
-
-<td style="text-align:left;">
-
-2020-12-11
-
-</td>
-
-<td style="text-align:right;">
-
-205
-
-</td>
-
-<td style="text-align:right;">
-
-56.72840
+69.67935
 
 </td>
 
@@ -401,87 +401,7 @@ Comuna
 
 <td style="text-align:right;">
 
-\-4.1822394
-
-</td>
-
-<td style="text-align:left;">
-
-Punta Arenas
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.1332754
-
-</td>
-
-<td style="text-align:left;">
-
-San Bernardo
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.0304344
-
-</td>
-
-<td style="text-align:left;">
-
-Valparaiso
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-\-0.0076894
-
-</td>
-
-<td style="text-align:left;">
-
-La Florida
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.4008154
-
-</td>
-
-<td style="text-align:left;">
-
-Las Condes
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.4318534
+\-0.2587140
 
 </td>
 
@@ -497,13 +417,13 @@ Talagante
 
 <td style="text-align:right;">
 
-0.7950072
+0.5411137
 
 </td>
 
 <td style="text-align:left;">
 
-Concon
+Valparaiso
 
 </td>
 
@@ -513,13 +433,13 @@ Concon
 
 <td style="text-align:right;">
 
-0.9701704
+0.6610266
 
 </td>
 
 <td style="text-align:left;">
 
-Macul
+San Bernardo
 
 </td>
 
@@ -529,7 +449,55 @@ Macul
 
 <td style="text-align:right;">
 
-0.9836094
+0.7333246
+
+</td>
+
+<td style="text-align:left;">
+
+La Florida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.7848891
+
+</td>
+
+<td style="text-align:left;">
+
+Las Condes
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.7878069
+
+</td>
+
+<td style="text-align:left;">
+
+Vina del Mar
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+0.9933739
 
 </td>
 
@@ -545,14 +513,13 @@ Nunoa
 
 <td style="text-align:right;">
 
-1.3597330
+1.3184172
 
 </td>
 
 <td style="text-align:left;">
 
-Vina del
-Mar
+Valdivia
 
 </td>
 
@@ -562,13 +529,46 @@ Mar
 
 <td style="text-align:right;">
 
-1.5598046
+1.7756738
 
 </td>
 
 <td style="text-align:left;">
 
-Valdivia
+Punta
+Arenas
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+2.2998422
+
+</td>
+
+<td style="text-align:left;">
+
+Concon
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;">
+
+2.9359147
+
+</td>
+
+<td style="text-align:left;">
+
+Macul
 
 </td>
 
